@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'thirdTask';
+
+  isDisplay=false;
+  log:number[]=[];
+
+  onDisplay(){
+    this.isDisplay=!this.isDisplay;
+    this.log.push(this.log.length+1);
+  }
+
 }
