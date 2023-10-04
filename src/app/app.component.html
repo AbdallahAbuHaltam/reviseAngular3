@@ -6,7 +6,7 @@
       <p *ngIf="isDisplay">Secret password = tuna</p>
       <div class="row"></div>
       <div class="col-xs-12">
-        <p *ngFor="let logE of log" [ngStyle]="{backgroundColor:logE>=5?'blue':'transparent'}"[ngClass]="{color:logE>=5}">{{logE}}</p>
+        <p *ngFor="let logE of log;let i =index" [ngStyle]="{backgroundColor:i>=5?'blue':'transparent'}"[ngClass]="{color:i>=5}">{{logE}}</p>
       </div>
     </div>
   </div>
